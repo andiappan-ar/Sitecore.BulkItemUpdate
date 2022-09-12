@@ -117,7 +117,7 @@ namespace Sitecore.BulkItemUpdate.Helpers
                 var allLanguage = LanguageManager.GetLanguages(masterDB);
 
 
-                Item parentItem = masterDB.GetItem(rootItemPath);
+                Item parentItem = masterDB.GetItem(rootItemPath,primaryLanguage);
 
                 bool isBucketDisableRequired = false;
 
@@ -175,6 +175,7 @@ namespace Sitecore.BulkItemUpdate.Helpers
 
                                 }
 
+                                // Turn on bucket
                                 if (isBucketDisableRequired) { BucketManager.CreateBucket(parentItem); }
                             }
 

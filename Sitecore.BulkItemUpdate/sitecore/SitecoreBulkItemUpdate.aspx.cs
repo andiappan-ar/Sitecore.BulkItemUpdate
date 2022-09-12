@@ -18,6 +18,7 @@ namespace Sitecore.BulkItemUpdate
            
             var watch = System.Diagnostics.Stopwatch.StartNew();
 
+            SitecoreBackupItem.CustomPackageGenerator.GeneratePackage();
             SitecoreBulkImport.UpdateSitecoreItem(bulkModel,TextBox3.Text);
 
             watch.Stop();

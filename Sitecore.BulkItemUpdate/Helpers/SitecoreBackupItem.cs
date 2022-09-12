@@ -9,34 +9,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Sitecore.BulkItemUpdate.Models;
+using Sitecore.Security.Accounts;
 
 namespace Sitecore.BulkItemUpdate.Helpers
 {
     public static class SitecoreBackupItem
     {
-        public class CustomPackageGenerator
-        {
-            private string FilePath { get; set; }
-            private string PackageName { get; set; }
-            private string Version { get; set; }
-            private string Author { get; set; }
-            private string Publisher { get; set; }
-            private string FileType { get; set; }
+        public static class CustomPackageGenerator
+        {           
+            private static string PackageName { get; set; }
+            private static string Version { get; set; }
+            private static string Author { get; set; }
+            private static string Publisher { get; set; }
+            private static string FileType { get; set; }
 
-            public CustomPackageGenerator(params object[] parameters)
-            {
-                this.FilePath = parameters[0] as string;
-                this.PackageName = parameters[1] as string;
-                this.Version = parameters[2] as string;
-                this.Author = parameters[3] as string;
-                this.Publisher = parameters[4] as string;
-                this.FileType = parameters[5] as string;
-            }
-
-            public void GeneratePackage()
+            public static void GeneratePackage()
             {
                 try
-                {
+                {                   
+                    PackageName = "Custom package for bulk item update";
+                    Version = "1.0";
+                    Author = User.Current.Name;
+                    Publisher = User.Current.Name;
+
                     string rootItemPath = @"/sitecore/content/SitecoreBulkItem/RootNestedItem";
                     string packageGeneratorFolder = System.Web.HttpContext.Current.Server.MapPath("~/packageGeneratorFolder/");
 
@@ -49,10 +44,10 @@ namespace Sitecore.BulkItemUpdate.Helpers
                     {
                         Metadata =
                 {
-                    PackageName = this.PackageName,
-                    Author = this.Author,
-                    Version = this.Version,
-                    Publisher = this.Publisher
+                    PackageName = PackageName,
+                    Author = Author,
+                    Version = Version,
+                    Publisher = Publisher
                 }
                     };
 
@@ -107,7 +102,7 @@ namespace Sitecore.BulkItemUpdate.Helpers
 
 
                     using (var writer = new PackageWriter(MainUtil.MapPath(string.Format("{0}/{1}/{2}.zip",
-                        Settings.PackagePath, packageGeneratorFolder, this.PackageName))))
+                        Settings.PackagePath, packageGeneratorFolder, PackageName))))
                     {
                         Context.SetActiveSite("shell");
 
