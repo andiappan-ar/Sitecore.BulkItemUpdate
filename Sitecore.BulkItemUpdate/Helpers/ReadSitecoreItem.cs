@@ -21,7 +21,7 @@ namespace Sitecore.BulkItemUpdate.Helpers
 
             try
             {
-                string rootItemPath = @"/sitecore/content/SitecoreBulkItem/RootNestedItem";
+                string rootItemPath = @"/sitecore/content/SitecoreBulkItem/RootNestedItem"; 
                 string templateID = "{C4A7A3C9-879F-49E0-BDBF-0789C027AC2D}";
 
                 Database masterDB = Sitecore.Configuration.Factory.GetDatabase("master");
