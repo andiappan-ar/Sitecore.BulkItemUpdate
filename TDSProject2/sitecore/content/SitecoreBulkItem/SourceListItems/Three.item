@@ -1,0 +1,105 @@
+----item----
+version: 1
+id: {6A1D88E1-EEFB-44F4-AE59-5F58F49B42C4}
+database: master
+path: /sitecore/content/SitecoreBulkItem/SourceListItems/Three
+parent: {2E6B4806-5D76-4B88-AADA-61B59B05DEE6}
+name: Three
+master: {00000000-0000-0000-0000-000000000000}
+template: {490D43C0-7C40-432C-9DF1-5FE22F1F2312}
+templatekey: ListItem
+
+----field----
+field: {FC61A8DD-5A66-40AF-9709-99A35011536E}
+name: Key
+key: key
+content-length: 9
+
+Key Three
+----field----
+field: {0E3A29C7-B987-4293-920B-06377C89172D}
+name: Value
+key: value
+content-length: 11
+
+Value Three
+----version----
+language: en
+version: 1
+revision: f23863de-b3c0-4d31-b3c6-c3a2d35b15a2
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20220910T131255Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f23863de-b3c0-4d31-b3c6-c3a2d35b15a2
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20220910T131255Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ta-IN
+version: 1
+revision: e2dddc0d-5c4f-43b0-acfa-3140cb18a036
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20220910T192758Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e2dddc0d-5c4f-43b0-acfa-3140cb18a036
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20220910T192758Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
