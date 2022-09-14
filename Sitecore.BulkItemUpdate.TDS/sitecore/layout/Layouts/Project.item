@@ -1,47 +1,33 @@
 ----item----
 version: 1
-id: {D79AF44B-BB03-4F08-A254-AB57324F8EAB}
+id: {DA04B275-8838-4A3A-AFEE-817CF1FDD2EB}
 database: master
-path: /sitecore/content/SitecoreBulkItem/RootItem
-parent: {3ECCDB12-204C-4276-8D7A-B85C48AA72CC}
-name: RootItem
+path: /sitecore/layout/Layouts/Project
+parent: {75CC5CE4-8979-4008-9D3C-806477D57619}
+name: Project
 master: {00000000-0000-0000-0000-000000000000}
 template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
 templatekey: Folder
 
 ----field----
-field: {A0CB3965-8884-4C7A-8815-B6B2E5CED162}
-name: __Editors
-key: __editors
-content-length: 77
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 36
 
-{59F53BBB-D1F5-4E38-8EBA-0D73109BB59B}|{A0C460F4-DBAE-4A5A-8F3A-C4ADFCDACEEA}
-----field----
-field: {D312103C-B36C-4CA5-864A-C85F9ABDA503}
-name: __Is Bucket
-key: __is bucket
-content-length: 1
-
-0
+applications/32x32/folder_window.png
 ----version----
 language: en
 version: 1
-revision: e7ead107-9dee-4b66-b1b9-ea6369024024
+revision: 27a4b415-db30-42ec-9b2b-7b2553e3935a
 
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20220910T094858Z
+20151030T173040Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,18 +41,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e7ead107-9dee-4b66-b1b9-ea6369024024
+27a4b415-db30-42ec-9b2b-7b2553e3935a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20220910T152035Z
+20210203T081850Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 16
 
-sitecore\Anonymous
+sitecore\unicorn

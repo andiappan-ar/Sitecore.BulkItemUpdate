@@ -305,6 +305,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
+    <Compile Include="Controllers\MyHomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -338,10 +339,12 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="Layout\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\SitecoreBulkItemSitedefinition.config" />
+    <Content Include="Views\Project\SitecoreBulkItem_Layout.cshtml" />
     <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
